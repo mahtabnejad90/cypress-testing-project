@@ -15,8 +15,7 @@
     "qa",
     "automation",
     "cypress",
-    "test",
-    "automation"
+    "test"
   ],
   "author": "Mahtab Nejad",
   "license": "ISC",
