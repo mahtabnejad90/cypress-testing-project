@@ -58,4 +58,23 @@ describe('Dummy test part 2', () => {
     it('should display number of books in travel category', () => {
         cy.get('.product_pod').its('length').should('eq', 11)
     })
+
+    it('should select the Poetry category via click', () => {
+        cy.get('a')
+            .contains('Poetry')
+            .click()
+        cy.get('h1').contains('Poetry')
+    })
+    it('should select the Olio book', () => {
+        cy.get('a')
+            .contains('Olio')
+            .click()
+        cy.get('h1').contains('Olio')
+    })
+
+    it('should display the correct price', () => {
+        cy.get('.price_color').contains('£23.88')
+    })
+
+
 })
