@@ -7,14 +7,15 @@ describe('Login input tests', () => {
         cy.log('Website rendered')
     })
 
+    //delay will slow down the tests
     it('should fill in the username textfield', () => {
         cy.get('#user_login').clear()
-        cy.get('#user_login').type('Invalid username')
+        cy.get('#user_login').type('Invalid username', {delay: 100})
     })
 
     it('should fill in the password textfield', () => {
         cy.get('#user_password').clear()
-        cy.get('#user_password').type('Invalid password')
+        cy.get('#user_password').type('Invalid password', {delay: 100})
     })
 
     it('should submit the login form', () => {
