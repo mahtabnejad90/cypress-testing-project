@@ -54,4 +54,8 @@ describe('Dummy test part 2', () => {
             .click()
         cy.get('h1').contains('Travel')
     })
+
+    it('should display number of books in travel category', () => {
+        cy.get('.product_pod').its('length').should('eq', 11)
+    })
 })
