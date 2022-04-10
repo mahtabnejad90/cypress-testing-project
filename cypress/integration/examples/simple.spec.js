@@ -46,7 +46,9 @@ describe('Dummy test part 2', () => {
     it('should render correct book website URL', () => {
         cy.visit('https://books.toscrape.com/index.html', {timeout: 10000})
         cy.url().should('include', 'index.html')
-        cy.log('Website rendered')
+        cy.log('Before reload')
+        cy.reload()
+        cy.log('After reload')
     })
 
     it('should select the Travel category via click', () => {
