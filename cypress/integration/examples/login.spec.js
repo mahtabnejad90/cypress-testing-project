@@ -18,6 +18,11 @@ describe('Login input tests', () => {
         cy.get('#user_password').type('Invalid password', {delay: 100})
     })
 
+    it('should select the keep me signed in checkbox', () => {
+        cy.get('[type="checkbox"]').click()
+        cy.wait(5000)
+    })
+
     it('should submit the login form', () => {
        cy.contains('Sign in').click()
     })
