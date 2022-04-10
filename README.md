@@ -7,10 +7,13 @@ Learning resources:
 
 [Cypress.io Official Documentation](https://docs.cypress.io/)
 
-Preqs for project setup:
+Preqs & tools for project setup:
 
-- IDE
+- VS Code IDE
 - Node
+- Cypress
+- Chrome
+- Prettier
 
 Commands: 
 

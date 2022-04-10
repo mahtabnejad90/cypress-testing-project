@@ -12,3 +12,9 @@ node_modules
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+cypress/videos/examples/*
+
+cypress/videos/downloads/*
+
+cypress/videos/screenshots/*
