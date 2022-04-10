@@ -46,6 +46,7 @@ describe('Dummy test part 2', () => {
     it('should render correct book website URL', () => {
         cy.visit('https://books.toscrape.com/index.html', {timeout: 10000})
         cy.url().should('include', 'index.html')
+        cy.log('Website rendered')
     })
 
     it('should select the Travel category via click', () => {
@@ -75,6 +76,4 @@ describe('Dummy test part 2', () => {
     it('should display the correct price', () => {
         cy.get('.price_color').contains('£23.88')
     })
-
-
 })
