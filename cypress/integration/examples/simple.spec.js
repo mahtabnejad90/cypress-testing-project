@@ -1,3 +1,5 @@
+/* const { describe } = require("mocha")
+
 describe('My first cypress test', () => {
     it('True should be true', () => {
         expect(true).to.equal(true)
@@ -15,4 +17,12 @@ describe('Another dummy test', () => {
     it('10 should be 10', () => {
         expect(10).to.equal(10)
     })
-})
+}) */
+
+describe('browser actions', () => {
+    it('should render correct URL', () => {
+        cy.visit('http://example.com',{timeout: 10000})
+
+    })
+
+ })
