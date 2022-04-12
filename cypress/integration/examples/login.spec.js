@@ -12,6 +12,8 @@ describe('Login input tests part 1', () => {
         cy.clearCookies({log: true})
         cy.clearLocalStorage('item', {log: true})
         cy.url().should('include', 'login.html')
+        //checks the tab title:
+        cy.title().should('include', 'Zero - Log in')
         cy.log('Website rendered')
     })
 
