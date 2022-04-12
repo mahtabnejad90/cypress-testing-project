@@ -65,7 +65,8 @@ describe('Login input tests part 2', () => {
     })
 
     it('should display login error message', () => {
-        cy.get('.alert-error').should('be.visible')
-        cy.get('.alert-error').contains('Login and/or password are wrong.')
+        cy.get('.alert-error')
+            .should('be.visible')
+            .and('contain', 'Login and/or password are wrong.')
     })
 })
