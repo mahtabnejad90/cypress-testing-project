@@ -1,6 +1,12 @@
 describe('Login input tests part 1', () => {
 
-    
+    it('should override the current time', () => {
+        // return timestamp
+        const date = new Date(2022, 4, 13).getTime()
+        cy.clock(date)
+        cy.log(date)
+    })
+
     it('should render the login page', () => {
         cy.visit('http://zero.webappsecurity.com/login.html', {timeout: 10000})
         cy.clearCookies({log: true})
@@ -37,7 +43,6 @@ describe('Login input tests part 1', () => {
 
 describe('Login input tests part 2', () => {
 
-    
     it('should render the login page', () => {
         cy.visit('http://zero.webappsecurity.com/login.html', {timeout: 10000})
         cy.url().should('include', 'login.html')
