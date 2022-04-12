@@ -3,6 +3,8 @@ describe('Login input tests part 1', () => {
     
     it('should render the login page', () => {
         cy.visit('http://zero.webappsecurity.com/login.html', {timeout: 10000})
+        cy.clearCookies({log: true})
+        cy.clearLocalStorage('item', {log: true})
         cy.url().should('include', 'login.html')
         cy.log('Website rendered')
     })
