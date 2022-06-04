@@ -31,10 +31,17 @@ Commands:
 
 ### Cypress Commands
 
-#### Opens Cypress Dashbpard
+#### Opens Cypress Dashboard
 
 `npm run cy:open`
 
 #### Opens Cypress Tests in headless mode
 
 `npm run cy:run`
+
+**Note:** Cypress version 10+ has removed the run all spec from its GUI dashboard, therefore a temporary run command can be used to run all the tests from one spec file. When creating a new test file, ensure that it is also imported in the <cypress/e2e/examples/all.cy.js> file as well. The command to run all test in headless mode:
+
+`npm run cy:run --spec ".\cypress\e2e\examples\all.cy.js`
+
+to run the specs in visual mode, just open the cypress dashboard and run the <all.cy.js> file
+
