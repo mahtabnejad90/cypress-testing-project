@@ -7,6 +7,8 @@ describe('Login with fixed data', () => {
             cy.get('#user_login').type(username)
             cy.get('#user_password').type(password)
             cy.contains('Sign in').click()
+            cy.get('.alert alert-error')
+            .contains('Login and/or password are wrong.')
         })
     })
 })
