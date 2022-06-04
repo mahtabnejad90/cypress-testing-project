@@ -1,5 +1,4 @@
 {
-    "baseURL": "URL goes here",
     "watchForFileChanges": false,
     "viewportWidth": 1000,
     "viewpostHeight": 600,
