@@ -11,7 +11,7 @@ Preqs & tools for project setup:
 
 - VS Code IDE
 - Node
-- Cypress
+- Cypress V10
 - Chrome
 - Prettier
 
