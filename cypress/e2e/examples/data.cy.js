@@ -17,5 +17,19 @@ describe('Write/Read data from and to JSON/Text file', () => {
         cy.readFile('log.txt')
           .should('eq', 'Mahtab Bahman Nejad')
     })
+
+    it('should read browser document content', () => {
+
+        cy.visit('https://www.example.com')
+        cy.wait(2000)
+        cy.document().
+        its('contentType')
+        .should('eq','text/html')
+        
+        cy.document()
+        .should('have.property','charset')
+        .and('eq','UTF-8')
+    })
+
  })
 
