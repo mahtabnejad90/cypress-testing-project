@@ -26,5 +26,5 @@ jobs:
       - name: Cypress run
         uses: ./
         with:
-          working-directory: examples/v10/quiet
+          working-directory: cypress/e2e/examples
           quiet: true
