@@ -20,3 +20,6 @@ cypress/videos/downloads/*
 cypress/videos/screenshots/*
 
 cypress/screenshots/*
+
+log.json
+log.txt
