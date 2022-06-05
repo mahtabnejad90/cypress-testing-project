@@ -9,3 +9,8 @@ import './screenshots.cy'
 import './scroll.cy'
 import './data.cy'
 import './class.cy'
+
+after(function(){
+    cy.clearCookies()
+    cy.clearLocalStorage()
+})
