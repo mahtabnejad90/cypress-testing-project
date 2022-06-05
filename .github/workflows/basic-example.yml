@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests with `quiet` parameter
       - name: Cache NPM and Cypress 📦
