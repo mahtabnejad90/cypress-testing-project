@@ -9,6 +9,7 @@ import './screenshots.cy'
 import './scroll.cy'
 import './data.cy'
 import './class.cy'
+import './xpath.cy'
 
 after(function(){
     cy.clearCookies()

@@ -26,6 +26,7 @@
   "homepage": "https://github.com/mahtabnejad90/cypress-testing-project#readme",
   "dependencies": {
     "cypress": "^10.0.2",
+    "cypress-xpath": "^1.6.2",
     "prettier": "^2.6.2"
   }
 }
