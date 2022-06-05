@@ -18,3 +18,5 @@ cypress/videos/examples/*
 cypress/videos/downloads/*
 
 cypress/videos/screenshots/*
+
+cypress/screenshots/*
