@@ -30,6 +30,5 @@ describe('Write/Read data from and to JSON/Text file', () => {
         .should('have.property','charset')
         .and('eq','UTF-8')
     })
-
  })
 
